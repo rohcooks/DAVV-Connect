@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DAVV Connect – Notices</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="notices">
+  <main>
+    <h1 class="pt">Notices</h1>
+    <p class="ps">University updates, deadlines, and campus events.</p><label class="sb directory-search"><i
+        data-i="search"></i><input id="notice-search" type="search"
+        placeholder="Search notices, deadlines, and events..." autocomplete="off"></label>
+    <div class="notice-toolbar">
+      <div class="notice-filters" role="group" aria-label="Filter updates"><button type="button" class="on"
+          data-filter="all">All updates</button><button type="button" data-filter="notices">Notices</button><button
+          type="button" data-filter="deadlines">Deadlines</button><button type="button"
+          data-filter="events">Events</button></div><span id="notice-count" class="notice-count"
+        aria-live="polite"></span>
+    </div>
+    <div class="row g-3 mx-0 notice-list" id="notice-list" aria-live="polite"></div>
+    <div class="empty-panel" id="notice-empty" hidden>No updates match your search.</div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

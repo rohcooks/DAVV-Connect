@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DAVV Connect – Create Account</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth" data-page="signup" style="--pt:48px">
+  <form class="card sm" id="f" novalidate style="--lg:132px">
+    <img class="logo" src="img/logo.png" alt="DAVV logo">
+    <h1 class="ttl">Create Your Account</h1>
+    <p class="sub">Join DAVV Connect to stay updated and connected with your university.</p>
+    <label class="fld"><i data-i="user"></i><input id="n" placeholder="Full Name" autocomplete="name"></label>
+    <label class="fld"><i data-i="mail"></i><input id="em" type="email"
+        placeholder="University Email ID (e.g. name@davv.ac.in)" autocomplete="email"></label>
+    <label class="fld"><i data-i="phone"></i><input id="mo" type="tel" placeholder="Mobile Number (Optional)"
+        autocomplete="tel"></label>
+    <label class="fld"><i data-i="lock"></i><input id="pw" type="password" placeholder="Create Password"
+        autocomplete="new-password"><i class="eye" data-i="eyeoff"></i></label>
+    <label class="fld"><i data-i="lock"></i><input id="cp" type="password" placeholder="Confirm Password"
+        autocomplete="new-password"><i class="eye" data-i="eyeoff"></i></label>
+    <label class="chk"><input type="checkbox" id="tc" checked>I agree to the&nbsp;<a href="#">Terms of
+        Service</a>&nbsp;and&nbsp;<a href="#">Privacy Policy.</a></label>
+    <p class="err" id="err"></p>
+    <button class="btn">Create Account</button>
+    <div class="or">or</div>
+    <button type="button" class="btn ghost" id="uni"><i data-i="cap"></i>Continue with University Email</button>
+    <p class="foot" style="margin-top:16px">Already have an account? <a href="index.html">Log In</a></p>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

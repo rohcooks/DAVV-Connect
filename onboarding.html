@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DAVV Connect - Onboarding</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth" data-page="onboarding" style="--pt:62px">
+  <form class="card wd" id="f" novalidate style="--lg:144px">
+    <img class="logo" src="img/logo.png" alt="DAVV logo">
+    <h1 class="ttl">Complete Your Profile</h1>
+    <p class="sub">Help us personalize your experience on DAVV Connect.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="sh"><span class="n">1</span>
+          <div><b>Department</b><small>Select your department from the list.</small></div>
+        </div><label class="fld"><i data-i="dept"></i><input id="dept" list="dl-dept"
+            placeholder="Choose your department" autocomplete="off"><i data-i="down"></i></label>
+      </div>
+      <div class="step">
+        <div class="sh"><span class="n">2</span>
+          <div><b>Programme / Course</b><small>Select your programme or course.</small></div>
+        </div><label class="fld"><i data-i="cap"></i><input id="prog" list="dl-prog"
+            placeholder="Choose your programme / course" autocomplete="off"><i data-i="down"></i></label>
+      </div>
+      <div class="step">
+        <div class="sh"><span class="n">3</span>
+          <div><b>Year / Semester</b><small>Select your current year or semester.</small></div>
+        </div><label class="fld"><i data-i="cal"></i><input id="sem" list="dl-sem"
+            placeholder="Choose your current year / semester" autocomplete="off"><i data-i="down"></i></label>
+      </div>
+      <div class="step">
+        <div class="sh"><span class="n">4</span>
+          <div><b>Batch <span style="font-weight:400;color:var(--m)">(Optional)</span></b><small>Select your batch or
+              admission year.</small></div>
+        </div><label class="fld"><i data-i="users"></i><input id="batch" list="dl-batch"
+            placeholder="Choose your batch (e.g. 2024)" autocomplete="off"><i data-i="down"></i></label>
+      </div>
+    </div>
+    <datalist id="dl-dept"></datalist><datalist id="dl-prog"></datalist><datalist id="dl-sem"></datalist><datalist
+      id="dl-batch"></datalist>
+    <p class="err" id="err"></p>
+    <button class="btn big">Complete Profile &rarr;</button>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

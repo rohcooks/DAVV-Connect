@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DAVV Connect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="home">
+  <main>
+    <section class="hero">
+      <p id="gr">Good morning,</p>
+      <h1 id="nm"></h1>
+      <p id="cl"></p>
+      <p>Devi Ahilya Vishwavidyalaya, Indore</p>
+      <label class="hs"><i data-i="search"></i><input id="hq" type="search"
+          placeholder="Search notices, departments, groups..." autocomplete="off"
+          aria-label="Search notices, departments, and groups"><kbd>Ctrl K</kbd></label>
+      <div id="home-search-results" class="home-search-results" role="listbox" aria-label="Search results"
+        aria-live="polite" hidden></div>
+    </section>
+    <div class="home-grid row g-3 mx-0">
+      <section class="cd col-12 col-md-6">
+        <h2>Important Notices</h2>
+        <a class="it" href="notices.html"><span class="ib"><i data-i="file"></i></span>
+          <div><b>Odd Semester Examination Timetable 2024–25</b><small>Examination Department</small></div><span
+            class="dt">14 Oct 2026</span><span class="tg">Examination</span>
+        </a>
+        <a class="it" href="notices.html"><span class="ib g1"><i data-i="book"></i></span>
+          <div><b>Updated Syllabus for <span class="pg"></span> – <span class="sem"></span></b><small>School of <span
+                class="dp"></span></small></div><span class="dt">12 Oct 2026</span><span class="tg g1">Academics</span>
+        </a>
+        <a class="it" href="notices.html"><span class="ib p"><i data-i="file"></i></span>
+          <div><b>Result Declaration – Even Semester 2024</b><small>Examination Department</small></div><span
+            class="dt">09 Oct 2026</span><span class="tg p">Results</span>
+        </a>
+      </section>
+      <section class="cd col-12 col-md-6">
+        <h2>My Communities</h2>
+        <div id="home-community-summary"></div>
+      </section>
+      <section class="cd col-12 col-md-6">
+        <h2>Upcoming Deadlines</h2>
+        <a class="it" href="notices.html"><span class="d">15<small>OCT</small></span>
+          <div><b>Assignment Submission</b><small>Data Structures (<span class="pg"></span>)</small></div><i
+            data-i="right"></i>
+        </a>
+        <a class="it" href="notices.html"><span class="d r">20<small>OCT</small></span>
+          <div><b>Examination Form (Regular)</b><small>Odd Semester 2024–25</small></div><i data-i="right"></i>
+        </a>
+        <a class="it" href="notices.html"><span class="d">25<small>OCT</small></span>
+          <div><b>Project Synopsis Submission</b><small>Mini Project (<span class="pg"></span>)</small></div><i
+            data-i="right"></i>
+        </a>
+      </section>
+      <section class="cd col-12 col-md-6">
+        <h2>Upcoming Events</h2>
+        <a class="it" href="notices.html"><img class="ev" src="img/ev1.jpg" alt=""><span class="tg">Workshop</span>
+          <div><b>Web Development Workshop</b>
+            <div class="mt"><i data-i="cal"></i>18 Oct 2026 · 10:00 AM</div>
+            <div class="mt"><i data-i="pinmap"></i>DAVV Main Campus</div>
+          </div><i data-i="right"></i>
+        </a>
+        <a class="it" href="notices.html"><img class="ev" src="img/ev2.jpg" alt=""><span class="tg p">Seminar</span>
+          <div><b>Career Opportunities in Tech</b>
+            <div class="mt"><i data-i="cal"></i>22 Oct 2026 · 11:00 AM</div>
+            <div class="mt"><i data-i="pinmap"></i>Science Auditorium</div>
+          </div><i data-i="right"></i>
+        </a>
+        <a class="it" href="notices.html"><img class="ev" src="img/ev3.jpg" alt=""><span
+            class="tg g1">Competition</span>
+          <div><b>National Level Coding Competition</b>
+            <div class="mt"><i data-i="cal"></i>28 Oct 2026 · 09:00 AM</div>
+            <div class="mt"><i data-i="pinmap"></i>ABV Hall</div>
+          </div><i data-i="right"></i>
+        </a>
+      </section>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
